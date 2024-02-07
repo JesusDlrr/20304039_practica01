@@ -54,7 +54,7 @@ describe("pruebas", () => {
         expect(task.description == 'updated').toBe(true)
     })
 
-    test("Update a task", () => {
+    test("Delete a task", () => {
         // Arrage
         let tasks = [];
         let task = {};
