@@ -13,6 +13,7 @@ let tasks = [
 
 // Get all tasks
 app.get('/tasks', (req, res) => {
+    const tasks = [];
     res.json(tasks);
 });
 
