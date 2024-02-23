@@ -12,7 +12,7 @@ jobs:
       ubuntu-latest
     steps:
       - name: Chechout repo
-        uses: checkout/setup-node@v4
+        uses: actions/checkout@v4
       - name: Action repo
         uses: actions/setup-node@v4
         with:
@@ -26,4 +26,3 @@ jobs:
 
       # - name: Run code linter
       #   run : npm run lint
-      
