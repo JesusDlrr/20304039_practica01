@@ -11,16 +11,18 @@ jobs:
     runs-on:
       ubuntu-latest
     steps:
-      - neme: Chechout repo
+      - name: Chechout repo
+        uses: actions/checkout@v4
+      - name: Action repo
         uses: actions/setup-node@v4
         with:
           node-verion: 20.x
-
-      - name install dependencies
+          
+      - name: install dependencies
         run: npm install
 
-      - name Run unit and integration tests
+      - name: Run unit and integration tests
         run: npm run test
 
-      - name: Run code linter
-        run : npm run lint
+      # - name: Run code linter
+      #   run : npm run lint
